@@ -10,15 +10,15 @@ from time import sleep
 
                         #Introductions
 
-#read line 16 and then line 12 
 
-#creater: real-life name = (KHAIRULLAH BIN HAROON HASSAN) mostly called kHALULAH 
+
+  #creater: real-life name = (KHAIRULLAH BIN HAROON HASSAN) mostly called kHALULAH 
   
   #this quiz application was made with the help of Mr Zubair with his hard work I appreciate it
 
 
-
-                          #about myself
+  
+                      #about myself
 
 # I am Khairallah bin Haroon Hassan u can call me khairu I am 12 years old going to be 13 this quiz is made by me it took 2 months I hope u love it once again thank your to Mr Zubair and to all my teachers and PROFECCER UGAIL thank your for providing with my biggest life opportunities I will never forget this day I hope I get a chance to learn more about  python programming language in thecircle programming class
 
@@ -62,19 +62,12 @@ from time import sleep
 
 #lastly in line 622 it will show you a calculating  screen and in line 628 it will print how many answers the user got correct 
 
-                       #corrections
-
-#q7: need inout function = compile
-
-#q8: color function missing
-
-#q9: color function missing
-
-#+ q10:
+                                      
 
   
 #dont add quotes in the endding 
 count = 0 #refer to line 8
+
 width = os.get_terminal_size().columns#get the center co
 questions = ['Is the economy doing well?','Does your family really love you?','Why is there hatred in the world?','Is the Mona Lisa beautiful?','What is the purpose of life?','Who is the best football player ever?','Are you having a good day?','Does this dress make me look fat?']#these cuestyions arent used 
 
@@ -129,6 +122,9 @@ Reversed = "\u001b[7m"#rivers
 
 greetings = [ "Hi nice to meet your " , "Welcome " , "Nice to meat your " , "Good afternoon "] #the greeting used in line [127]
 
+endings = ["Have an nice day","It was nice to see your here"]
+
+
 #print(Reversed)
 done = False  
 #LOding screen if u dont want loding screen  deleat forme line-72 to line-86
@@ -143,7 +139,7 @@ def animate():
         time.sleep(0.2)
     sys.stdout.write('\r""')
 
-t = threading.Thread(target=animate)
+t = threading.Thread(target = animate)
 t.start()
 
 #long process here
@@ -221,10 +217,10 @@ while True:
       
     else:
       print(red + 'wrong answer ')
+      print(green + ",32 is the correct answer,")
+      print("") 
+
       
-      print("")
-  
-        
     Answer2 = color(blue + 'Q2: What tissues connect the muscels to the bones?\n '+ magenta + 'Answer: ')
     Answer2 = Answer2.lower()
     if Answer2 == "Tendons" or Answer2 == "tendons":
@@ -262,7 +258,10 @@ while True:
     else:
       print(red + 'wrong answer ')
       
+      
+      print(green + ",Tendons is the correct answer,")
       print("")
+      
   #wrong
     Answer3 = color(blue + 'Q3: wich year was very first model of iphone released? \n ' + magenta + "Answer: ")
     Answer3 = Answer3.lower()
@@ -300,8 +299,9 @@ while True:
     else:
       print(red + 'worng asnwer')
       
+      
+      print(green + ",2007 is the correct answer,")
       print("")
-  
   
     Answer4 = color(blue + 'Q4: Who is soften Called the Father of the computers\n'+ magenta +  'Answer: ')
     Answer4 = Answer4.lower()
@@ -340,8 +340,10 @@ while True:
     else:
       print(red + 'worng asnwer')
       
+      
+      print(green + ",CHARLES BABBAGE is the correct answer,")
       print("")
-  
+      
     Answer5 = color(blue + 'Q5: What is the name of the perosn who launched "ebay" in back in the 1995\n'+ magenta + 'Answer: ')
     Answer5 = Answer5.lower()
     if Answer5 == "PIERRE OMIDYAR" or Answer5 == "PIERREOMIDYAR" or Answer5 == "PIERREomidyar" or Answer5 == "PIERREomidyar" or Answer5 == "pierre omidyar":
@@ -380,9 +382,11 @@ while True:
     else:
       print(red + 'wrong answer ') 
       
-      print("")
       
-    
+      print(green + ",PIERRE OMIDYAR is the correct answer,")
+      print("")
+
+      
     Answer6 = color(blue + 'Q6: Google, chrome, safari, Fire fox, and explorers are diffrent typys of what?\n'+ magenta + 'Answer: ')
     Answer6 = Answer6.lower()
     if Answer6 == "WEB BROWSERS" or Answer6 == "WEBBROWSERS" or Answer6 == "WEB BROWSERS " or Answer6 == "WEBBROWSERS " or Answer6 == "browser" or Answer6 == "webrowser":
@@ -421,8 +425,10 @@ while True:
     else:
       print(red + 'wrong answer ') 
       
+      
+      print(green + ",web browser is the correct answer,")
       print("")
-  
+      
     Answer7 = color(blue + 'Q7: what was twitters original name? \n'+ magenta + 'Answer: ')
     Answer7 = Answer7.lower() 
     if Answer7 == "twttr" or Answer7 == " TWTTR" or Answer7 == "TWTTR " or Answer7 == " TWTTR " or Answer7 == " twttr" or Answer7 == "twttr " or Answer7 == " twttr " :
@@ -460,8 +466,10 @@ while True:
       print("")
     else:
       print(red + 'wrong answer ') 
-      print("")  
-     
+        
+      print(green + ",Twttr is the correct answer,")
+      print("")
+
     
     Answer8 = color(blue + 'Q8: What part of the atom has no electric charge? \n'+ magenta + 'Answer: ')
     Answer8 = Answer8.lower() 
@@ -500,9 +508,12 @@ while True:
       print("")
     else:
       print(red + 'wrong answer ') 
-      print("")  
-     
-  
+        
+      print(green + ",Neutron is the correct answer,")
+      print("")
+
+
+    
     Answer9 = color(blue + 'Q9: What is the symbol for potassium?\n '+ magenta + 'Answer: ')
     if Answer9 == "k" or Answer9 == "K" or Answer9 == " k" or Answer9 == " K" or Answer9 == " K " or Answer9 ==  " k ":
       
@@ -539,9 +550,10 @@ while True:
       print("")
     else:
       print(red + 'wrong answer ') 
-      print("")  
-       
-  
+        
+      print(green + ",k is the correct answer,") 
+      print("")
+      
     Answer10 = color(blue + 'Q10: How many eyes do caterpillars have\n'+ magenta + 'Answer: ')
     if Answer10 == "12" or Answer10 == " 12" or Answer10 == "12 " or Answer10 == " 12 " or Answer10 == "12legs" or Answer10 == "12 LEGS " or Answer10 == " 12 legs": 
       
@@ -581,8 +593,10 @@ while True:
   
     else:
       print(red + 'wrong answer ') 
-      print("")  
-  
+      
+      print(green + ",12 is the correct answer,")
+      print("")
+    
     exstra = input(bright_green + 'Do u want' + magenta + ' 1 ' + bright_green + 'more exstra question ')
     if exstra == "Yes" or exstra == " yes" or exstra == "Yes" or exstra == "yes":
       
@@ -648,6 +662,7 @@ while True:
   
   else:
     print("invalid answer")
+    
   
 print(cyan + "Getting your score")
 
@@ -691,6 +706,7 @@ while True:
       print("")
     else:
       print(red + '')
+      clear()
       break
       print("")
 
